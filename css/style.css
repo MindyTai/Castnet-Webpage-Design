@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+* {
+  font-family: "cwTeXYen", "Saira";
+  position: relative;
+  //border: solid 1px black;
+
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+
+header.jumbotron {
+  text-align: center;
+  background-image: url(https://i.imgur.com/YukbEAQ.png);
+  background-size: 100%;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+}
+header.jumbotron h3 {
+  color: white;
+}
+header.jumbotron h1 {
+  color: white;
+}
+header.jumbotron hr {
+  max-width: 50px;
+  border: solid 2px #e08804;
+}
+
+section {
+  text-align: center;
+  padding: 70px 0px;
+}
+section p {
+  font-size: 19px;
+}
+section p a {
+  color: #e08804;
+  text-decoration: none;
+  transition: 0.5s;
+}
+section p:hover a {
+  text-decoration: none;
+  border: 1px solid #e08804;
+  height: 0px;
+  color: #e08804;
+  border-width: 0px 0px 4px;
+  width: 170px;
+  text-align: center;
+}
+
+section.intro {
+  padding: 25px;
+}
+section.intro h2 {
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+section.story {
+  border: solid 5px #e08804;
+  background-color: #eee;
+  width: 800px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+section.story .container {
+  top: -35px;
+  width: 800px;
+}
+section.story .container .col-md-6 {
+  padding: 5px;
+}
+section.story .container i {
+  font-size: 45px;
+  top: -20px;
+}
+section.story .container .section-subheading {
+  top: -20px;
+  font-size: 18px;
+}
+section.story .container .section-heading {
+  font-size: 25px;
+}
+
+section.pictures {
+  padding: 0px;
+  color: white;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+//section.pictures .theme {
+  padding: 10px;
+  height: 50px;
+  width: 300px;
+  top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.pictures .theme p {
+  text-align: center;
+  color: black;
+  top: 10px;
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+
+  left: 40%;
+  font-weight: medium;
+  line-height: 50px;
+}
+section.pictures .col-md-4 {
+  top: 10px;
+  padding: 110px;
+  cursor: pointer;
+}
+section.pictures .col-md-4 .text-panel {
+  width: 150px;
+  background-color:rgba(224, 136, 4,0.8);
+  left: -15px;
+  top: -10px;
+
+}
+section.pictures .col-md-4 .text-panel h4 {
+  width: 150px;
+  background-color: rgba(211, 137, 25,0.8);
+  height: 80px;
+  top: 30px;
+  color: white;
+  left: 0px;
+  font-size: 20px;
+
+}
+section.pictures .col-md-4:hover p {
+  opacity: 0.7;
+
+}
+section.pictures .col-md-4:hover h4 {
+  display: block;
+  color: white;
+
+}
+section.pictures .col-md-4:hover:before {
+  filter: brightness(0.7);
+  background-size: 100% auto;
+}
+section.pictures .col-md-4:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition-duration: 0.5s;
+  background-position: center center;
+}
+section.pictures .pic1:before {
+  background-image: url(https://i.imgur.com/ZR8DTF0.jpg);
+  background-size: 190% auto;
+}
+section.pictures .pic2:before {
+  background-image: url(https://i.imgur.com/pqigrGw.jpg);
+  background-size: 190% auto;
+}
+section.pictures .pic3:before {
+  background-image: url(https://i.imgur.com/AzULTdT.jpg);
+  background-size: 190% auto;
+}
+
+footer.jumbotron {
+  text-align: center;
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+footer.jumbotron input {
+  background-color: white;
+  max-width: 350px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer.jumbotron .container {
+  top: -35px;
+  color: white;
+  padding: 0px 0px;
+  color: #e08804;
+}
+
+footer.jumbotron hr {
+  max-width: 50px;
+  border: solid 2px #e08804;
+}
+footer.jumbotron button {
+  cursor: pointer;
+}
+footer.jumbotron button:hover {
+  background-color: #e08804;
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #e08804;
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  //padding: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+#myBtn:hover {
+  color: rgba(255,255,255,1);
+}
+
+nav.navbar {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  background-color: transparent;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: #e08804;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top.later{
+    color: white;
+}
+
+
+nav.breadcrumb{
+    width:  300px;
+}
+
+
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    width: 500px;
+    //top: 35px;
+    //left: 50%;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #e08804 ;
+    text-decoration: none;
+
+    transition: 0.5s;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+
+    text-decoration: none;
+    border: 1px solid #e08804;
+    height: 0px;
+    color: #e08804;
+    border-width: 0px 0px 4px;
+    width: 170px;
+    text-align: center;
+}
